@@ -1,0 +1,37 @@
+clear-interval: 600
+
+warnings:
+  - 30
+  - 10
+
+clear-named-entities: false
+minimum-lived-seconds: 5
+player-safe-radius: 24
+
+excluded-entities:
+  - "player"
+  - "item_frame"
+  - "armor_stand"
+  - "villager"
+  - "wolf"
+  - "cat"
+  - "parrot"
+
+messages:
+  prefix: "&6[ClearLag] &r"
+  daemon-clear-success: "%prefix%&aAll unnecessary mobs and items have been cleared. Removed: &f%count%"
+  daemon-warn-message: "%prefix%&eNext clear in &f%time_left%&e seconds."
+  no-permission: "%prefix%&cYou do not have permission."
+  instant-start: "%prefix%&eRunning instant clear..."
+  instant-done: "%prefix%&aInstant clear complete. Removed: &f%count%"
+  reload-start: "%prefix%&eReloading configuration..."
+  reload-done: "%prefix%&aConfiguration reloaded."
+  time-left: "%prefix%&eNext clear in &f%time_left%&e seconds."
+  version: "%prefix%&eClearLagBedrock version &f%version%"
+  help:
+    - "&7------- &6ClearLag Commands &7-------"
+    - "&e/clearlag time &7- Show time to next clear"
+    - "&e/clearlag now &7- Run clear immediately"
+    - "&e/clearlag reload &7- Reload config"
+    - "&e/clearlag help &7- Show this help"
+    - "&e/clearlag version &7- Show plugin version"

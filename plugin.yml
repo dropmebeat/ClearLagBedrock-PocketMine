@@ -1,0 +1,26 @@
+name: ClearLagBedrock
+version: 1.0.0
+main: icrafts\clearlagbedrock\ClearLagBedrock
+api: 5.0.0
+author: iCrafts
+description: ClearLag adaptation for PocketMine-MP Bedrock
+
+permissions:
+  clearlag.command:
+    default: true
+  clearlag.command.now:
+    default: op
+  clearlag.command.time:
+    default: true
+  clearlag.command.reload:
+    default: op
+  clearlag.command.help:
+    default: true
+  clearlag.command.version:
+    default: op
+
+commands:
+  clearlag:
+    description: Root command for ClearLagBedrock
+    usage: "/clearlag <help|now|reload|time|version>"
+    permission: clearlag.command
